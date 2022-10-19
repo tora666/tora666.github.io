@@ -13,6 +13,7 @@ body {
     background-color: #EEEEEE;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 section {
@@ -39,4 +40,66 @@ ul {
 
 img {
     margin-bottom: 24px;
+}
+
+.home-main {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+    background-image: url(assets/images/background.png);
+    background-size: cover;
+}
+
+.home-main-container {
+    width: 600px;
+    text-align: center;
+}
+
+.home-main-container h1 {
+    font-size: 48px;
+    letter-spacing: 0.1rem;
+}
+
+.home-main-container h2 {
+    font-size: 24px;
+    letter-spacing: 0.2rem;
+}
+
+.home-main-container img {
+    margin: 0;
+}
+
+.right-container {
+    flex-shrink: 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container img {
+    margin-bottom: 24px;
+}
+
+.home-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button-container a + a {
+    margin-left: 24px;
+}
+
+.privacy {
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+    text-decoration: none;
+    color: #333333
+}
+
+.privacy span {
+    font-size: 36px;
 }
