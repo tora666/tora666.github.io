@@ -10,7 +10,7 @@ p {
 
 body {
     color: #444444;
-    background-color: #EEEEEE;
+    background-color: #F0EAE3;
     padding: 0;
     margin: 0;
     position: relative;
@@ -46,8 +46,8 @@ img {
     display: flex;
     justify-content: center;
     padding: 0 24px;
-    background-image: url(assets/background.png);
-    background-size: cover;
+    /* background-image: url(assets/background.png); */
+    /* background-size: cover; */
 }
 
 .home-main-container {
@@ -102,4 +102,88 @@ img {
 
 .privacy span {
     font-size: 36px;
+}
+
+@media screen and (max-width: 959px) {
+	.home-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home-main-container h2 {
+        font-size: 18px;
+        letter-spacing: 0.1rem;
+        margin-bottom: 24px;
+    }
+
+    .home-button-container {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	.home-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home-main-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-main-container h1 {
+        font-size: 26px;
+        letter-spacing: 0.1rem;
+    }
+    
+    .home-main-container h2 {
+        font-size: 18px;
+        letter-spacing: 0.1rem;
+        margin-bottom: 24px;
+    }
+    
+    .home-main-container img {
+        margin: 0;
+    }
+
+    .right-container img {
+        width: 30%;
+        margin-bottom: 16px;
+    }
+
+    .left-container > img {
+        width: 100%;
+    }
+
+    .home-button-container {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .home-button-container img {
+        width: 140px;
+    }
+
+    .home-button-container a + a {
+        margin-left: 16px;
+    }
+
+    #apple-btn {
+        width: 120px;
+    }
+
+    .privacy {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        text-decoration: none;
+        color: #333333
+    }
 }
