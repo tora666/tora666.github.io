@@ -42,6 +42,34 @@ img {
     margin-bottom: 24px;
 }
 
+.home {
+    text-align: center;
+    padding: 40px;
+}
+
+.home img{
+    width: 200px;
+}
+
+.home-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .home a {
+    text-decoration: none;
+} */
+
+.home-icons .home-span {
+    font-size: 40px;
+    color: #333333;
+}
+
+.home-icons .home-span + .home-span {
+    margin-right: 40px;
+    margin-left: 8px;
+}
+
 .home-main {
     display: flex;
     justify-content: center;
